@@ -8,9 +8,6 @@
     btn.setAttribute('aria-label', label);
     btn.setAttribute('title', label);
   }
-  function saved() {
-    try { return localStorage.getItem('theme'); } catch (e) { return null; }
-  }
 
   apply(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
   btn.hidden = false;
@@ -20,14 +17,6 @@
     apply(next);
     try { localStorage.setItem('theme', next); } catch (e) {}
   });
-
-  // Foydalanuvchi o'zi tanlamagan bo'lsa, tizim mavzusiga ergashamiz
-  var mq = window.matchMedia('(prefers-color-scheme: dark)');
-  if (mq.addEventListener) {
-    mq.addEventListener('change', function (e) {
-      if (!saved()) apply(e.matches ? 'dark' : 'light');
-    });
-  }
 })();
 
 (function () {

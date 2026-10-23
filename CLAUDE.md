@@ -41,7 +41,7 @@ Faqat brauzerning o'z imkoniyatlari ishlatiladi: `IntersectionObserver`, `matchM
 ```
 index.html          — faqat HTML tuzilmasi va kontent
 css/style.css       — barcha stillar
-js/theme.js         — saqlangan mavzuni sahifa chizilishidan oldin qo'yadi
+js/theme.js         — saqlangan mavzuni sahifa chizilishidan oldin qo'yadi (standart: kunduzgi)
 js/main.js          — mavzu tugmasi, scroll animatsiyasi, 3D tilt
 images/zafar.png    — portret, 640×640
 ```
@@ -113,8 +113,8 @@ Bo'limlar shu tartibda bo'ladi:
 - Tilt faqat sichqoncha bor qurilmalarda ishlaydi (`hover: hover` va `pointer: fine`).
 - Tungi rejim:
   - `data-theme` atributi orqali ishlaydi, tanlov `localStorage` ga saqlanadi;
-  - tanlov bo'lmasa tizim mavzusiga ergashadi;
-  - JS bo'lmasa `prefers-color-scheme` ga qarab ishlaydi.
+  - tanlov bo'lmasa sayt doim kunduzgi rejimda ochiladi (tizim mavzusiga ergashmaydi);
+  - JS bo'lmasa ham kunduzgi rejimda ochiladi.
 - Responsive chegaralar: 960px (menyu yashiriladi, bitta ustun) va 600px (telefon).
 - 375px kenglikda gorizontal siljish bo'lmasligi shart.
 

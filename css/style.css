@@ -22,18 +22,6 @@
   --line: #2a3a2f;
   color-scheme: dark;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --text: #eef2ee;
-    --muted: #9aa69d;
-    --faded: #707e74;
-    --bg: #0a110c;
-    --soft: #16221a;
-    --soft-hover: #1d2c22;
-    --line: #2a3a2f;
-    color-scheme: dark;
-  }
-}
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
