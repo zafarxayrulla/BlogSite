@@ -1,0 +1,15 @@
+# Claude Code lokal sozlamalari
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Muharrirlar
+.vscode/
+.idea/
+*.swp
+
+# Python (lokal server)
+__pycache__/
